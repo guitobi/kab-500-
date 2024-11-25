@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPV Drone</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <nav>
+            <ul class="menu">
+        <li><a href="index.html"   class="btn" onmouseover="highlightButton(this)" onmouseout="removeHighlight()" ><h1  class="kaka">Головна</h1></a></li>
+        <li><a href="https://www.aliexpress.com/"  class="btn" onmouseover="highlightButton(this)" onmouseout="removeHighlight()"><h1 class="kaka">Ali Express</h1></a></li>
+        <li><a href="https://www.socialdrone.com.ua/"  class="btn" onmouseover="highlightButton(this)" onmouseout="removeHighlight()"><h1 class="kaka">Social Drone</h1></b></a></li>
+        <li><a href="https://t.me/+VBMp90y95P8xZmQy"  class="btn" onmouseover="highlightButton(this)" onmouseout="removeHighlight()"><b><h1 class="kaka">Market Place</h1></b></a></li>
+        <li><a href="https://ab3.army/vakansiy/"  class="btn" onmouseover="highlightButton(this)" onmouseout="removeHighlight()"><b><h1 class="kaka">Klick</h1></b></a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <button id="languageBtn">🌍</button>
+            <div id="flagDropdown" class="dropdown-content">
+                <div class="flag" data-lang="uk">
+                    <img src="https://img.freepik.com/premium-vector/round-flag-ukraine-vector-illustration_739746-203.jpg" alt="Україна" />
+                </div>
+                <div class="flag" data-lang="en">
+                    <img src="https://thumbs.dreamstime.com/z/%D0%BA%D1%80%D1%83%D0%B3-%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%84%D0%BB%D0%B0%D0%B3-%D1%81%D1%88%D0%B0-114898487.jpg" alt="США" />
+                </div>
+            </div>
+        </div>
+    </header> 
+    <div class="marquee-container">
+    <div class="marquee">ТУТ МОГЛА Б БУТИ ВАША РЕКЛАМА(ЗА РЕКЛАМОЮ ЗВЕРТАТИСЬ *+380 50 145 87 44*</div>
+    </div>   
+    <div id="overlay"></div>
+</body>
+ <main class="main-content">
+    <section class="steps">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="C:\Users\skull\Downloads\document_5240493342508209575.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео тег.
+        </video>
+        <div class="step step1">
+            <h2>01</h2>
+            <h3 class="text-montserrat">Провести збір</h3>
+            <p class="montserrat-paragraph">Відкрити свій збір і зібрати на запчастини для 1-2 дронів</p>
+        </div>
+        <div class="step step2">
+            <h2>02</h2>
+            <h3>Замовити комплектуючі</h3>
+            <p>Замовити з AliExpress комплектуючі за нашими рекомендаціями</p>
+        </div>
+        <div class="step step3">
+            <h2>03</h2>
+            <h3>Зібрати та налаштувати дрон</h3>
+            <p>Зібрати та налаштувати дрон за наданими інструкціями</p>
+        </div>
+        <div class="step step4">
+            <h2>04</h2>
+            <h3>Відправити</h3>
+            <p>Обрати підрозділ для відправки.</p>
+        </div>
+    </section>
+     <div class="texxt">
+        <h1>ЯК СКЛАСТИ  FPV ДРОН?</h1>
+    </div>
+
+    <div class="stage-banner">
+        <h2>Етап 01 Провести збір</h2>
+    </div>
+    <div class="extra-banner1">
+        <h4> Етап 02 Замовлення Комплектуючих</h4>
+    </div>
+    <div class="image-container">
+        <img src="C:\Users\skull\Downloads\photo_5278646082915657316_x-removebg-preview.png" alt="Image 1" class="custom-image">
+        <img src="https://ps.informator.ua/wp-content/uploads/2024/01/thumb_889_730_410_0_0_auto.jpg" alt="Image 2" class="custom-image">
+    </div>
+  
+
+
+
+
+
+
+
+
+
+  <div class="drones-container">
+    
+    <div class="drone-block">
+        <div class="button-block" onclick="toggleDroneContent('drone-content-10')" id="drone-10">
+             <h4 class="nap">10-ти дюймовий дрон</h4>
+             <h6 class="price">(≈182$)</h6>
+             <h6 class="pid">*тисни*</h6>
+        </div>
+        <div class="drone-content" id="drone-content-10" style="display: none;">
+               <div class="custom-column">
+                   <div class="drone-item"> <a href="https://vi.aliexpress.com/item/1005006945669541.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000039043758985%22%7D&aff_fcid=b23999d3d30d4295a91c4b622b8eb65f-1730746186021-02557-_okyZ729&aff_fsk=_okyZ729&aff_platform=api-new-link-generate&sk=_okyZ729&aff_trace_key=b23999d3d30d4295a91c4b622b8eb65f-1730746186021-02557-_okyZ729&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">СТЕК SpeedyBee F405 V4 55A <a href="#" class="silka">*тисни на текст*</a></a>
+                   </div>
+               </div>
+               <div class="custom-column">
+                   <div class="drone-item"> <a href="https://vi.aliexpress.com/item/1005006403040254.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000037039693138%22%7D&aff_fcid=f2ce99acc6bb48749f24c94d268bc10f-1730746253251-07821-_opuLyZf&aff_fsk=_opuLyZf&aff_platform=api-new-link-generate&sk=_opuLyZf&aff_trace_key=f2ce99acc6bb48749f24c94d268bc10f-1730746253251-07821-_opuLyZf&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Рама Mark4 V2 10"</a></div>
+               </div>
+               <div class="custom-column">
+                   <div class="drone-item"> <a href="https://vi.aliexpress.com/item/1005007082500585.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000039341426661%22%7D&aff_fcid=a45cad183bff4b92b2d463b684a8f4c5-1730746321930-06154-_okAEecl&aff_fsk=_okAEecl&aff_platform=api-new-link-generate&sk=_okAEecl&aff_trace_key=a45cad183bff4b92b2d463b684a8f4c5-1730746321930-06154-_okAEecl&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Пропелери HQProp </a></div>
+               </div>
+               <div class="custom-column">
+                  <div class="drone-item"> <a href="https://vi.aliexpress.com/item/1005006415035787.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000037168173574%22%7D&aff_fcid=7d4ffb63f19b429f855161d426e678e8-1730746387760-02448-_opB5GyH&aff_fsk=_opB5GyH&aff_platform=api-new-link-generate&sk=_opB5GyH&aff_trace_key=7d4ffb63f19b429f855161d426e678e8-1730746387760-02448-_opB5GyH&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Мотори ReadyToSky 3115 900KV</a></div>
+              </div>
+               <div class="custom-column">
+                  <div class="drone-item"> <a href="https://vi.aliexpress.com/item/1005006448925880.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000037209084357%22%7D&aff_fcid=159d665839174ab7949c9587b5daf00f-1730746438517-09723-_on21AQt&aff_fsk=_on21AQt&aff_platform=api-new-link-generate&sk=_on21AQt&               aff_trace_key=159d665839174ab7949c9587b5daf00f-1730746438517-09723-_on21AQt&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Камера Caddx Ratel Pro</a></div>
+              </div>
+               <div class="custom-column">
+                  <div class="drone-item"> <a href="https://vi.aliexpress.com/item/1005005077167378.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000032887418627%22%7D&aff_fcid=f2056c5468d1495e86d6512c3f1e5fc6-1730746478998-06743-_omeDTQ9&aff_fsk=_omeDTQ9&aff_platform=api-new-link-generate&sk=_omeDTQ9&aff_trace_key=f2056c5468d1495e86d6512c3f1e5fc6-1730746478998-06743-_omeDTQ9&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Антена RushFPV Cherry II 5.8G SMA RHCP 150mm</a></div>
+              </div>
+               <div class="custom-column">
+                  <div class="drone-item"> <a href="https://vi.aliexpress.com/item/1005006966789846.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000039151558728%22%7D&aff_fcid=f0832e82b92c498ea2a281a43ffca69a-1730746584452-08647-_oEmIRiV&aff_fsk=_oEmIRiV&aff_platform=api-new-link-generate&sk=_oEmIRiV&aff_trace_key=f0832e82b92c498ea2a281a43ffca69a-1730746584452-08647-_oEmIRiV&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">BAYCK ELRS 915MHz</a></div>
+              </div>
+               <div class="custom-column">
+                  <div class="drone-item"> <a href="https://vi.aliexpress.com/item/1005006067128597.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000035577324012%22%7D&aff_fcid=f73b1a920b964b35b364d0499e2f27f4-1730746680735-02731-_oCSh9Az&aff_fsk=_oCSh9Az&aff_platform=api-new-link-generate&sk=_oCSh9Az&aff_trace_key=f73b1a920b964b35b364d0499e2f27f4-1730746680735-02731-_oCSh9Az&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Відеопередавач RushFPV Max Solo 5.8G 2.5W 48CH</a></div>
+              </div>
+               <div class="custom-column">
+            <div class="drone-item"> <a href="https://imrad.com.ua/ua/eeufr1v102b-1-388457">Конденсатор Panasonic FR 1000uF 35V</a></div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Блок для 7-ми дюймового дрона -->
+    <div class="drone-block">
+        <div class="button-block" onclick="toggleDroneContent('drone-content-7')" id="drone-7">
+            <h4 class="nap">7-ми дюймовий дрон</h4>
+            <h6 class="price">(≈204$)</h6>
+            <h6 class="pid">*тисни*</h6>
+        </div>
+        <div class="drone-content" id="drone-content-7" style="display: none;">
+            <div class="custom-column">
+                     <div class="drone-item"><a href="https://vi.aliexpress.com/item/1005006945669541.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000039043758985%22%7D&aff_fcid=b23999d3d30d4295a91c4b622b8eb65f-1730746186021-02557-_okyZ729&aff_fsk=_okyZ729&aff_platform=api-new-link-generate&sk=_okyZ729&aff_trace_key=b23999d3d30d4295a91c4b622b8eb65f-1730746186021-02557-_okyZ729&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">СТЕК SpeedyBee F405 V4 55A <a href="#" class="silka">*тисни на текст*</a> </a></div>
+            </div>       
+            <div class="custom-column">         
+                     <div class="drone-item"><a href="https://vi.aliexpress.com/item/1005005927527241.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000034885784292%22%7D&aff_fcid=b344f868cb0240b0a5a12a8664291dbe-1730750232415-09182-_oBKRXLz&aff_fsk=_oBKRXLz&     aff_platform=api-new-link-generate&sk=_oBKRXLz&aff_trace_key=b344f868cb0240b0a5a12a8664291dbe-1730750232415-09182-_oBKRXLz&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Рама Mark4 7" Phisital</a></div>
+            </div>
+            <div class="custom-column">         
+                     <div class="drone-item"><a href="https://vi.aliexpress.com/item/1005007190275766.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000039749644394%22%7D&aff_fcid=7855bd73f4d24542a81f6c818c8e0d2a-1730750271160-05195-_oCfiRgh&aff_fsk=_oCfiRgh&aff_platform=api-new-link-generate&sk=_oCfiRgh&aff_trace_key=7855bd73f4d24542a81f6c818c8e0d2a-1730750271160-05195-_oCfiRgh&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Пропелери HQProp 7040</a></div>
+            </div>
+            <div class="custom-column">         
+                     <div class="drone-item"><a href="https://vi.aliexpress.com/item/1005006753650939.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000038194132050%22%7D&aff_fcid=8c8bae5d997b4ae4bb0ddcff79dd8582-1730750296737-02462-_oFXikcl&aff_fsk=_oFXikcl&aff_platform=api-new-link-generate&sk=_oFXikcl&aff_trace_key=8c8bae5d997b4ae4bb0ddcff79dd8582-1730750296737-02462-_oFXikcl&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Мотори EMAX Eco II 2807 1300KV</a></div>
+            </div>
+            <div class="custom-column">         
+                     <div class="drone-item"><a href="https://vi.aliexpress.com/item/1005006448925880.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000037209084357%22%7D&aff_fcid=159d665839174ab7949c9587b5daf00f-1730746438517-09723-_on21AQt&aff_fsk=_on21AQt&aff_platform=api-new-link-generate&sk=_on21AQt&aff_trace_key=159d665839174ab7949c9587b5daf00f-1730746438517-09723-_on21AQt&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Камера Caddx Ratel Pro</a></div>
+            </div>
+            <div class="custom-column">         
+                     <div class="drone-item"><a href="https://vi.aliexpress.com/item/1005005077167378.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000032887418627%22%7D&aff_fcid=f2056c5468d1495e86d6512c3f1e5fc6-1730746478998-06743-_omeDTQ9&aff_fsk=_omeDTQ9&aff_platform=api-new-link-generate&sk=_omeDTQ9&aff_trace_key=f2056c5468d1495e86d6512c3f1e5fc6-1730746478998-06743-_omeDTQ9&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Антена RushFPV Cherry II 5.8G SMA RHCP 150mm</a></div>
+            </div>
+            <div class="custom-column">         
+                     <div class="drone-item"><a href="https://vi.aliexpress.com/item/1005006966789846.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000039151558728%22%7D&aff_fcid=f0832e82b92c498ea2a281a43ffca69a-1730746584452-08647-_oEmIRiV&aff_fsk=_oEmIRiV&aff_platform=api-new-link-generate&sk=_oEmIRiV&aff_trace_key=f0832e82b92c498ea2a281a43ffca69a-1730746584452-08647-_oEmIRiV&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">BAYCK ELRS 915MHz</a></div>
+            </div>
+            <div class="custom-column">         
+                     <div class="drone-item"><a href="https://vi.aliexpress.com/item/1005006067128597.html?pdp_ext_f=%7B%22sku_id%22%3A%2212000035577324012%22%7D&aff_fcid=f73b1a920b964b35b364d0499e2f27f4-1730746680735-02731-_oCSh9Az&aff_fsk=_oCSh9Az&aff_platform=api-new-link-generate&sk=_oCSh9Az&aff_trace_key=f73b1a920b964b35b364d0499e2f27f4-1730746680735-02731-_oCSh9Az&terminal_id=98f7befd88b4413ca782fde8ed848205&afSmartRedirect=y">Відеопередавач RushFPV Max Solo 5.8G 2.5W 48CH</a></div>
+            </div>
+            <div class="custom-column">         
+                     <div class="drone-item"><a href="https://imrad.com.ua/ua/eeufr1v102b-1-388457">Конденсатор Panasonic FR 1000uF 35V</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<div class="custom-block1" id="fade-in-block">
+    Етап 03 Зібрати та налаштувати  дрон
+</div>
+
+
+
+
+<div class="custom-videos-wrapper">
+    <div class="custom-video-container">
+        <iframe
+            src="https://www.youtube.com/embed/3NaTwaRA78Q"
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <p class="custom-video-description">Короткий опис відео або його назва</p>
+    </div>
+    
+    <div class="custom-video-container">
+        <iframe
+            src="https://www.youtube.com/embed/CsUqnlsswcg"
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <p class="custom-video-description">Короткий опис відео або його назва</p>
+    </div>
+</div>
+
+
+
+
+  <div class="gray-block">
+    <img class="Dima" src="https://www.rbc.ua/static/img/p/h/photo_2023_09_10_15_40_39__2__1300x820.jpg" alt="Image">
+</div>
+
+<div class="gray-block1">
+    <h3 class="lll">Для надання більш детальної інформації, текстової інструкції та програмного забезпечення для дрону приєднайтесь до проєкту Social Drone UA за посиланням в шапці сайту</h3>
+</div>
+</main>
+
+<footer class="custom-footer">
+    <!-- Контент футера, наприклад, контактна інформація або соціальні посилання -->
+</footer>
+
+
+
+    <script>
+        const languageBtn = document.getElementById('languageBtn');
+const flagDropdown = document.getElementById('flagDropdown');
+const textElement = document.getElementById('text');
+
+const translations = {
+    'uk': {
+        'Привіт, світ!': 'Привіт, світ!',
+    },
+    'en': {
+        'Привіт, світ!': 'Hello, world!',
+    },
+};
+
+languageBtn.addEventListener('click', () => {
+    flagDropdown.classList.toggle('active');
+});
+
+document.querySelectorAll('.flag').forEach(flag => {
+    flag.addEventListener('click', () => {
+        const lang = flag.getAttribute('data-lang');
+        const currentText = textElement.textContent;
+        const translatedText = translations[lang][currentText];
+
+        if (translatedText) {
+            textElement.textContent = translatedText;
+            flagDropdown.classList.remove('active'); // Сховати меню
+        }
+    });
+});
+
+// Закриття меню при кліку поза межами
+window.addEventListener('click', (event) => {
+    if (!languageBtn.contains(event.target) && !flagDropdown.contains(event.target)) {
+        flagDropdown.classList.remove('active');
+    }
+});
+// script.js
+
+window.onload = function() {
+    const textElement = document.getElementById('animatedText');
+    textElement.style.transform = 'translateX(-100%)'; // Початкове положення (зліва)
+    textElement.style.opacity = '0'; // Невидимий спочатку
+
+    // Виконуємо анімацію через 100 мс після завантаження
+    setTimeout(() => {
+        textElement.style.transition = 'transform 2s ease, opacity 2s ease'; // Налаштування анімації
+        textElement.style.transform = 'translateX(0)'; // Переміщуємо на своє місце
+        textElement.style.opacity = '1'; // Зробити видимим
+    }, 200);
+};
+document.addEventListener("DOMContentLoaded", function() {
+    const stageBanner = document.querySelector(".stage-banner");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                stageBanner.classList.add("visible");
+                observer.unobserve(stageBanner); // Зупиняє спостереження після спрацювання
+            }
+        });
+    }, { threshold: 0.1 });
+
+    observer.observe(stageBanner);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('.extra-banner').classList.add('visible');
+});
+document.addEventListener("DOMContentLoaded", function() {
+    // Отримуємо всі картки
+    const cards = document.querySelectorAll(".card");
+
+    // Контейнер для відображення інструкцій
+    const instructionContainer = document.getElementById("instruction-container");
+
+    // Інструкції для кожної картки
+    const instructions = {
+        1: "<h2>Перша Інструкція</h2><p>Це контент першої інструкції...</p>",
+        2: "<h2>Друга Інструкція</h2><p>Це контент другої інструкції...</p>"
+    };
+
+    // Додаємо обробник подій для кожної картки
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            const instructionNumber = card.getAttribute("data-instruction");
+
+            // Вставляємо відповідну інструкцію у контейнер
+            instructionContainer.innerHTML = instructions[instructionNumber];
+
+            // Додаємо ефект появи інструкції
+            instructionContainer.style.display = "block";
+            instructionContainer.style.opacity = "0";
+            setTimeout(() => {
+                instructionContainer.style.opacity = "1";
+            }, 10);
+        });
+    });
+});
+document.addEventListener("scroll", function() {
+    const images = document.querySelectorAll(".custom-image");
+
+    images.forEach((image) => {
+        const rect = image.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        if (rect.top <= windowHeight - 100) {  // Картинка з’являється за 100px до входу в видиму зону
+            image.classList.add("visible");
+        }
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const buttonContainer = document.querySelector('.button-container');
+
+    // Функція для перевірки, чи виявляється елемент у видимій частині екрану
+    function checkVisibility() {
+        const rect = buttonContainer.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            buttonContainer.classList.add('visible'); // Додаємо клас для появи
+            window.removeEventListener('scroll', checkVisibility); // Видаляємо обробник події
+        }
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Перевіряємо видимість на завантаженні сторінки
+});
+
+// Функція для перевірки видимості елемента
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Отримуємо елемент
+const banner = document.querySelector('.extra-banner1');
+
+// Додаємо обробник події скролінгу
+window.addEventListener('scroll', () => {
+    if (isElementInViewport(banner)) {
+        banner.classList.add('visible'); // Додаємо клас, коли елемент у видимості
+    }
+});
+document.querySelectorAll('.custom-column').forEach(column => {
+            column.addEventListener('click', () => {
+                const linkWindow = column.querySelector('.custom-link-window');
+                const arrow = column.querySelector('.custom-arrow');
+                const isOpen = linkWindow.classList.contains('open');
+
+                // Закриваємо всі вікна та скидаємо поворот стрілок
+                document.querySelectorAll('.custom-link-window').forEach(window => {
+                    window.classList.remove('open');
+                    window.style.maxHeight = '0'; // Скидаємо висоту
+                });
+                document.querySelectorAll('.custom-arrow').forEach(arrow => {
+                    arrow.classList.remove('open'); // Скидаємо поворот стрілки
+                });
+
+                // Якщо вікно не відкрите, відкриваємо його
+                if (!isOpen) {
+                    linkWindow.classList.add('open'); // Додаємо клас для відкриття
+                    linkWindow.style.maxHeight = linkWindow.scrollHeight + 'px'; // Встановлюємо висоту вмісту для анімації
+                    arrow.classList.add('open'); // Повертаємо стрілку при відкритті
+                }
+            });
+        });
+
+document.addEventListener("scroll", function() {
+    const block = document.getElementById("fade-in-block");
+    const blockPosition = block.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    // Якщо блок у видимій області, додаємо клас 'show'
+    if (blockPosition < windowHeight) {
+        block.classList.add("show");
+    }
+});
+window.addEventListener('scroll', function() {
+  const block = document.querySelector('.gray-block');
+  const blockPosition = block.getBoundingClientRect().top;
+
+  // Якщо блок потрапляє в область видимості, додаємо клас active для анімації
+  if (blockPosition < window.innerHeight - 100) { // додаємо невеликий відступ, щоб анімація почалась раніше
+    block.classList.add('active');
+  } else {
+    block.classList.remove('active');
+  }
+});
+
+
+
+
+
+window.addEventListener('scroll', function() {
+  const blockLeft = document.querySelector('.gray-block');
+  const blockRight = document.querySelector('.gray-block1');
+
+  const blockLeftPosition = blockLeft.getBoundingClientRect().top;
+  const blockRightPosition = blockRight.getBoundingClientRect().top;
+
+  // Якщо лівий блок потрапляє в область видимості
+  if (blockLeftPosition < window.innerHeight - 100) {
+    blockLeft.classList.add('active');
+  } else {
+    blockLeft.classList.remove('active');
+  }
+
+  // Якщо правий блок потрапляє в область видимості
+  if (blockRightPosition < window.innerHeight - 100) {
+    blockRight.classList.add('active');
+  } else {
+    blockRight.classList.remove('active');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+function toggleDroneContent(contentId) {
+    const content = document.getElementById(contentId);
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+function toggleDroneContent(contentId) {
+    const content = document.getElementById(contentId);
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+function toggleDroneContent(contentId) {
+    const content = document.getElementById(contentId);
+
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+// Функція для перевірки видимості елементів
+function checkVisibility() {
+    const blocks = document.querySelectorAll('.button-block');
+    blocks.forEach(block => {
+        const rect = block.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            // Якщо елемент знаходиться в межах видимості, додаємо клас
+            block.classList.add('visible');
+        }
+    });
+}
+
+// Викликаємо перевірку при прокручуванні
+window.addEventListener('scroll', checkVisibility);
+
+// Викликаємо перевірку при завантаженні сторінки (щоб елементи, що вже видимі, також з'явились)
+window.addEventListener('load', checkVisibility);
+
+// Виконуємо перевірку одразу після завантаження
+checkVisibility();
+</script>
+</body>
+</html>

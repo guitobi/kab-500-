@@ -1,0 +1,143 @@
+.fundraising-section {
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: black;
+}
+
+/* Title Styles */
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.title-gradient-border {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 2px;
+  background: linear-gradient(90deg, #8B5CF6, #7C3AED, #3B82F6);
+}
+
+.title-inner {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 22px;
+  padding: 1px;
+}
+
+.title-content {
+  padding: 1rem 3rem;
+  border-radius: 20px;
+}
+
+.title-text {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.title-placeholder {
+  visibility: hidden;
+  padding: 1rem 3rem;
+}
+
+.title-placeholder h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Card Styles */
+.card {
+  padding: 1.5rem;
+  border: 1px solid #1F2937;
+  background-color: rgba(17, 24, 39, 0.5);
+  border-radius: 0.5rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-header i {
+  width: 2rem;
+  height: 2rem;
+  color: #8B5CF6;
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #E5E7EB;
+}
+
+/* List Styles */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #9CA3AF;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bullet {
+  width: 0.375rem;
+  height: 0.375rem;
+  background-color: #8B5CF6;
+  border-radius: 9999px;
+}
+
+/* Text Styles */
+p {
+  color: #9CA3AF;
+}
+
+/* Icon Classes - Add these if you're not using Lucide React */
+.icon-target,
+.icon-wallet,
+.icon-users,
+.icon-heart-handshake {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

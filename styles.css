@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    color: white;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(64, 64, 64, 0.5); /* Darker semi-transparent gray */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Додаємо це для вертикального вирівнювання кнопок */
+    padding: 0 20px;
+    height: 100px; /* Встановимо висоту хедера для більшої гнучкості */
+}
+
+.menu {
+    display: fixed;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+}
+
+    .menu li {
+        margin: 0; /* Змінюйте значення для бажаного відступу */
+        padding: 40px;
+        flex-grow: 1;
+        height: 100%;
+    }
+
+.btn {
+    display: fixed;
+    justify-content: end;
+    align-items: end;
+    text-decoration: none;
+    color: #7F4C00;
+    padding: 0 30px;
+    height: 90%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    margin: 0 -10px; /* Встановлює відступи між кнопками */
+}
+
+.menu li {
+    height: 100px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+}
+
+.btn.active {
+    color: #f0f0f0;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозорий чорний фон */
+    display: none; /* Приховуємо за замовчуванням */
+    z-index: 100; /* Щоб бути над іншими елементами */
+    transition: opacity 0.5s ease; /* Анімація появи */
+}
+
+    #overlay.visible {
+        display: block;
+        opacity: 1;
+    }
+
+main {
+    padding: 20px;
+    background-color: transparent;
+    height: 200vh;
+}
+
+}
+
+.fpv-image {
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    width: 1200px;
+    height: auto;
+    z-index: 1;
+    transform: translate(50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+    .overlay:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 20%;
+        right: 20%;
+        bottom: 0;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        height: 3000px;
+    }
+
+.overlay-content {
+    position: relative;
+    color: white;
+    padding: 20px;
+    z-index: 2;
+    text-align: center;
+}
+
+.fpv-image2 {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    right: -400px;
+    top: 160px;
+}
+
+.black-background {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    top: -70px;
+    right: 25px;
+}
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+    .overlay:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 20%;
+        right: 20%;
+        bottom: 0;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    .overlay:after {
+        content: "";
+        position: absolute;
+        top: 145px; /* Висота хедера (можете змінити на свою) */
+        left: 20%;
+        right: 20%;
+        bottom: 100px;
+        border: 5px solid white; /* Білі краї */
+        border-radius: 10px; /* Закруглені краї */
+        z-index: 1;
+        height: 2850px;
+    }
+
+.content-container {
+    display: flex; /* Використовуємо Flexbox для вирівнювання */
+    align-items: center; /* Вирівнюємо по вертикалі */
+    justify-content: flex-start; /* Вирівнюємо по горизонталі */
+    padding: 20px;
+    max-width: 1200px; /* Максимальна ширина контейнера */
+    margin: 0 auto; /* Центруємо контейнер */
+}
+
+.fpv-image {
+    width: 1500px; /* Задаємо ширину зображення */
+    height: auto; /* Автоматична висота */
+    margin-right: 20px; /* Відстань між зображенням і текстом */
+}
+
+.text-box {
+    position: absolute;
+    top: 30%; /* Відстань від верху */
+    left: 55%;
+    transform: translate(-30%, -50%);
+    width: 30%;
+    height: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    color: #F0EAD6;
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 3;
+    /* Додаємо фонове зображення замість чорного кольору */
+    background-image: url('https://focus.ua/static/storage/thumbs/2176x/3/82/580fa22c-3e1a40213e9213954eb98c0fd0ee6823.png');
+    background-size: cover; /* Зображення заповнить весь блок */
+    background-position: center; /* Центрування зображення */
+    background-repeat: no-repeat; /* Запобігання повторенню зображення */
+    border: 5px solid white;
+}
+
+.additional-text-box {
+    position: absolute;
+    top: 65%;
+    left: 38.5%;
+    transform: translate(-30%, -50%);
+    width: 58%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: #D2B48C;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 2;
+    border: 5px solid white;
+}
+
+
+
+
+footer {
+    position: relative; /* Змінити на fixed для закріплення */
+    background-color: #0d1b2a;
+    padding: 20px;
+    text-align: center;
+    z-index: 3; /* Переконайтеся, що футер на передньому плані */
+    margin: 0;
+    bottom: 0px; /* Прив’язати до нижньої частини */
+    left: 0; /* Додати ліву сторону, щоб охопити всю ширину */
+    right: 0;
+    top: 1000px;
+    height: 600px;
+}
+
+@media (min-width: 768px) {
+    .marquee-container {
+        position: fixed; /* Відносне позиціонування для активування z-index */
+        overflow: hidden; /* Ховаємо текст, що виходить за межі контейнера */
+        width: 100%; /* Стрічка займає всю ширину */
+        background-color: grey; /* Фон стрічки */
+        height: var(--marquee-height, 25px); /* Змінна висота, яку можна легко редагувати */
+        z-index: 3; /* Високий z-index для переднього плану */
+        margin-top: 59px; /* Відступ зверху */
+        text-align: center;
+        top: 30px;
+    }
+
+    .marquee {
+        display: inline-block;
+        white-space: nowrap; /* Текст не переноситься на новий рядок */
+        color: #fff; /* Колір тексту */
+        font-size: 1.2em;
+        animation: marquee 10s linear infinite; /* Анімація */
+        z-index: 2; /* Встановлюємо ще вищий z-index для самого тексту */
+        position: relative; /* Щоб z-index працював */
+        line-height: var(--marquee-height, 15px); /* Вирівнювання тексту по центру вертикалі */
+        font-size: 15px; /* Зміна розміру тексту */
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(-200%);
+        }
+        /* Початок з лівої сторони */
+        100% {
+            transform: translateX(200%);
+        }
+        /* Закінчення з правої сторони */
+    }
+
+    .video-container {
+        position: relative; /* Фіксуємо контейнер */
+        top: 0; /* Розміщуємо на верхній частині */
+        left: 0; /* Розміщуємо зліва */
+        width: 100%; /* Встановлюємо ширину на 100% */
+        height: 100%; /* Встановлюємо висоту на 100% */
+        z-index: -1; /* Відправляємо відео на фон */
+    }
+
+    video {
+        width: 103%; /* Встановлюємо ширину відео на 100% */
+        height: 100%; /* Встановлюємо висоту відео на 100% */
+        object-fit: cover; /* Прибираємо вирізання відео */
+    }
+
+    .logo-text {
+        font-family: "Rubik Mono One", monospace;
+        color: whitesmoke; /* Колір тексту */
+        font-size: 6em; /* Розмір шрифту */
+        margin-top: -700px;
+        padding-top: 5px;
+        z-index: 10;
+        font-style: italic;
+        user-select: none;
+        text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; /* Чорна обводка */
+    }
+
+    .logo-text1 {
+        color: whitesmoke; /* Колір тексту */
+        font-size: 4em; /* Розмір шрифту */
+        margin-top: 0px;
+        padding-top: 5px;
+        z-index: 10;
+        font-style: italic;
+        user-select: none;
+        /* Додаток товстішої обводки */
+        text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; /* Чорна обводка */
+    }
+
+    .pyramid-base {
+        width: 200px;
+        height: 200px;
+        background-color: #4f4f4f;
+        position: relative;
+        transform: rotateX(25deg);
+        transform-style: preserve-3d;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+        top: 2850px;
+        left: 800px;
+    }
+
+        .pyramid-base::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #4f4f4f;
+            transform: rotateX(90deg);
+            width: 100%;
+            height: 100%;
+            transform-origin: bottom;
+            box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+    .nuclear-button {
+        width: 180px;
+        height: 180px;
+        background: radial-gradient(circle, #ff0000, #cc0000);
+        border: 5px solid #660000;
+        border-radius: 50%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 -10px 20px rgba(0, 0, 0, 0.2);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 150px; /* Це вирівняє текст по вертикалі */
+        padding: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        position: absolute;
+        left: 100px;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        user-select: none; /* Заборона виділення тексту */
+        top: 100px;
+    }
+
+        .nuclear-button:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), inset 0 -5px 10px rgba(0, 0, 0, 0.3);
+            transform: translate(-50%, -50%) translateY(-5px);
+        }
+
+        .nuclear-button:active {
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+            transform: translate(-50%, -50%) translateY(2px);
+        }
+
+    .recruiting-centers {
+        background-color: #d2b48c;
+        width: 50vw;
+        padding: 80px;
+        position: relative;
+        text-align: left;
+        border-radius: 20px;
+        top: 100px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+        .recruiting-centers.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .recruiting-centers h2 {
+            font-weight: bold;
+            font-size: 42px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #7F4C00;
+            position: relative;
+            cursor: pointer; /* Вказівник, який показує, що елемент можна натискати */
+        }
+
+            .recruiting-centers h2::after {
+                content: '▼'; /* Стрілка вниз */
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: transform 0.3s ease;
+            }
+
+        /* Коли блок розгорнутий, стрілка обертається */
+        .recruiting-centers.open h2::after {
+            transform: translateY(-50%) rotate(180deg); /* Обертаємо стрілку на 180 градусів */
+        }
+
+        /* Сховуємо список за замовчуванням */
+        .recruiting-centers ul {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        /* Коли блок відкритий, показуємо список */
+        .recruiting-centers.open ul {
+            max-height: 500px; /* Задаємо максимальну висоту, щоб розгорнувся список */
+        }
+
+        .recruiting-centers li {
+            margin: 10px 0;
+            font-weight: bold;
+            font-size: 27px;
+            text-transform: uppercase;
+        }
+
+        .recruiting-centers a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding-bottom: 5px;
+            border-bottom: 2px solid black;
+            position: relative;
+        }
+
+            .recruiting-centers a:hover {
+                color: white;
+                border-bottom-color: white;
+            }
+
+    .info-window {
+        color: black;
+        background-color: #fff;
+        border: 1px solid pink;
+        padding: 20px;
+        width: 800px;
+        height: 800px;
+        position: absolute;
+        top: 0;
+        right: 0; /* Стартове положення з правого боку */
+        opacity: 0; /* Спочатку невидимий */
+        transform: translateX(100%); /* Зміщуємо віконце вправо за межі екрану */
+        transition: transform 0.5s ease, opacity 0.5s ease; /* Анімація для появи */
+        z-index: 9999; /* Дуже високий z-index */
+        display: block; /* Віконце завжди на місці, просто ховається за рахунок opacity та transform */
+        border-radius: 5%;
+    }
+
+        .info-window.active {
+            opacity: 1; /* Робимо видимим */
+            transform: translateX(0); /* Переміщуємо на екран */
+        }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                padding: 0 15px; /* Відступи тільки зліва і справа */
+                height: 100%; /* Зробіть посилання по висоті хедера */
+                display: flex;
+                justify-content: center; /* Вирівнювання по горизонталі */
+                align-items: center; /* Вирівнювання по вертикалі */
+                background-color: transparent;
+                border-radius: 5px;
+            }
+
+                nav ul li a:hover {
+                    background-color: #555; /* Колір фону при наведенні */
+                    transition: background-color 0.3s ease;
+                }
+
+    .language-selector {
+        position: relative;
+        margin-left: 200px; /* Додаємо від'ємний маргін, щоб перемістити лівіше */
+    }
+
+    #languageBtn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: 0%;
+        z-index: 100;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10000; /* Встановлюємо високий z-index */
+        margin-top: 0px;
+        padding: 10px;
+        margin-left: -200%;
+    }
+
+        .dropdown-content.active {
+            display: block;
+        }
+
+        .dropdown-content .flag {
+            cursor: pointer;
+            margin: 5px;
+        }
+
+            .dropdown-content .flag img {
+                width: 30px; /* Розмір прапорців */
+                height: auto;
+            }
+
+        .dropdown-content.active {
+            display: block;
+        }
+
+    .globe-button {
+        margin-left: 20px; /* Додає відступ зліва для кнопки */
+        background: none; /* Без фону */
+        border: none; /* Без обводки */
+        font-size: 24px; /* Задає розмір шрифта для кнопки */
+        color: white; /* Білий колір кнопки */
+        cursor: pointer; /* Змінює курсор на руку при наведенні */
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 100px auto; /* Відступ від хедера */
+        padding: 20px;
+    }
+
+    .animated-text {
+        position: relative; /* Необхідно для анімації */
+        opacity: 0; /* Текст невидимий спочатку */
+    }
+
+    .logoFPV1 {
+        margin-left: 20px; /* Відступ між текстом і логотипом */
+        animation: slideIn 1s forwards; /* Додаємо анімацію */
+    }
+
+    .logoFPV {
+        max-width: 100px; /* Максимальна ширина логотипу */
+        height: auto; /* Зберігає пропорції зображення */
+    }
+
+    .textFPV h1 {
+        margin: 0; /* Видаляє стандартні відступи */
+    }
+    /* Анімація для логотипу */
+    @keyframes slideIn {
+        from {
+            transform: translateX(100vw); /* Початкова позиція - за межами екрану справа */
+            opacity: 0; /* Початкова непрозорість - 0 */
+        }
+
+        to {
+            transform: translateX(0); /* Кінцева позиція - на місці */
+            opacity: 1; /* Кінцева непрозорість - 1 */
+        }
+    }
